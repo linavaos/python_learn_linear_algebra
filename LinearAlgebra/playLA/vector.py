@@ -34,6 +34,11 @@ class Vector:
         # return Vector(self*k)
         return Vector([e * k for e in self])
     
+    # 向量点乘
+    def dot(self,other):
+        return sum([ o1 * o2 for o1,o2 in zip(self,other)])
+
+    
 
     # 向量除以k
     def __truediv__(self,k):
